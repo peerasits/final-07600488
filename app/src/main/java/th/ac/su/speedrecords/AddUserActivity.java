@@ -59,7 +59,7 @@ public class AddUserActivity extends AppCompatActivity {
                     public void run() { // worker thread
                         AppDatabase db = AppDatabase.getInstance(AddUserActivity.this);
                         db.userDao().addUser(user);
-                        finish();
+
                     }
                 });
             }
